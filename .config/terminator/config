@@ -1,0 +1,23 @@
+[global_config]
+  title_font = Monospace 15
+  title_use_system_font = False
+[keybindings]
+  move_tab_left = <Primary><Shift>braceleft
+  move_tab_right = <Primary><Shift>braceright
+  next_tab = <Primary><Shift>l
+  prev_tab = <Primary><Shift>h
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_image = None
+    font = Monospace 14
+    scrollback_lines = 100000
+    use_system_font = False
