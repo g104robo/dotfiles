@@ -5,6 +5,7 @@ packagelist=(
      "gnome-terminal" 
      "terminator" 
      "mlterm"
+     "byobu"
 
 #日本語化パッケージ
      "ubuntu-defaults-ja"
