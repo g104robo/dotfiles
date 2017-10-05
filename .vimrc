@@ -21,6 +21,7 @@ if dein#load_state(s:dein_dir)
   call dein#add('Shougo/neomru.vim')
   call dein#add('Shougo/neosnippet-snippets')
   call dein#add('LeafCage/yankround.vim')
+  call dein#add('tomasr/molokai')
   " プラグインリストを収めた TOML ファイル
   " 予め TOML ファイル（後述）を用意しておく
   let g:rc_dir    = expand('~/.vim/rc')
