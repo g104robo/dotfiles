@@ -67,3 +67,6 @@ repo = 'tomasr/molokai'
 [[plugins]]
 repo = 'bronson/vim-trailing-whitespace'
 
+[[plugins]]
+repo = 'Yggdroot/indentLine'
+
