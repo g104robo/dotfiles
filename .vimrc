@@ -116,7 +116,7 @@ if &term =~ "xterm"
     let &t_EI .= "\e[?2004l"
     let &pastetoggle = "\e[201~"
 
-    function XTermPasteBegin(ret)
+    function! XTermPasteBegin(ret)
         set paste
         return a:ret
     endfunction
