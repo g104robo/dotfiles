@@ -18,23 +18,23 @@ sudo rosdep init
 rosdep update
 
 #環境設定
-echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
-source ~/.bashrc
-
-#rosinstallの準備
-#sudo apt-get -y install python-rosinstall python-rosinstall-generator python-wstool build-essential
-
-#make workspace
-mkdir -p ~/catkin_ws/src
-cd ~/catkin_ws/src
-#catkin_init_workspace
-
-#build workspace
-cd ~/catkin_ws/
-catkin_make
-
-#set workspace
-source devel/setup.bash
+# echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
+# source ~/.bashrc
+#
+# #rosinstallの準備
+# #sudo apt-get -y install python-rosinstall python-rosinstall-generator python-wstool build-essential
+#
+# #make workspace
+# mkdir -p ~/catkin_ws/src
+# cd ~/catkin_ws/src
+# #catkin_init_workspace
+#
+# #build workspace
+# cd ~/catkin_ws/
+# catkin_make
+#
+# #set workspace
+# source devel/setup.bash
 
 #echo ROS_PACKAGE_PATH
 echo $ROS_PACKAGE_PATH
