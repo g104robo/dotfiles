@@ -1,2 +1,8 @@
 # dotfiles
-vimrc,terminator,redshift,fcitx-mozc
+
+1. ./install.sh
+install aplications
+
+2. ./link.sh
+link dotfiles
+
