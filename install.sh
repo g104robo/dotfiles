@@ -37,6 +37,7 @@ packagelist=(
 
 #other
     "redshift"
+    "vlc"
 )
 
 echo "start apt install apps..."
