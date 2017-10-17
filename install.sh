@@ -35,6 +35,8 @@ packagelist=(
     "gnuplot"
     "gnuplot-x11"
 
+#other
+    "redshift"
 )
 
 echo "start apt install apps..."
