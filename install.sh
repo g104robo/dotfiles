@@ -39,6 +39,7 @@ packagelist=(
     "redshift"
     "vlc"
     "kazam"
+    "gimp"
 )
 
 echo "start apt install apps..."
@@ -48,3 +49,6 @@ done
 
 sudo apt update
 sudo apt upgrade
+
+#入力メソッドをfcitxに切り替える
+im-config -n fcitx
