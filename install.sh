@@ -38,6 +38,7 @@ packagelist=(
 #other
     "redshift"
     "vlc"
+    "kazam"
 )
 
 echo "start apt install apps..."
