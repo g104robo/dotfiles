@@ -10,7 +10,7 @@ alias ocm='CURRENT_DIR=$(pwd) && cd ~/omni_ros && catkin_make && cd $CURRENT_DIR
 
 #push漏れ確認
 alias gbn='git rev-parse --abbrev-ref HEAD'
-function git_not_pushed {
+function is_git_not_pushed {
   # git管理下にいるかどうかの確認
   if [[ "`git rev-parse --is-inside-work-tree 2>/dev/null`" = "true" ]]; then
     # HEADのハッシュを取得
