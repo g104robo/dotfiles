@@ -1,16 +1,18 @@
 # dotfiles
 
 1. ./install.sh
-install aplications
+登録したパッケージをインストールする
+パッケージのアップデートとアップグレードをする
+その他設定を行う
 
 2. ./link.sh
-link dotfiles
+dotfilesをリンクする
 
 3. ros_kinetic_setup.sh
-setup ros-kinetic environment
+ros-kineticの環境をセットアップする。セットアップ後にsetup.bashをsourceしてcatkin_makeする必要あり
 
 4. ypspur_setup.sh
-setup ypspur libraries
+ypspurやSSM関連のライブラリをインストールする
 
 due
     install.sh
