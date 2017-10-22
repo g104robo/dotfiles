@@ -196,3 +196,5 @@ endfunction
 function! LightlineMode()
   return winwidth(0) > 60 ? lightline#mode() : ''
 endfunction
+
+autocmd BufRead,BufNewFile *.launch setfiletype xml
