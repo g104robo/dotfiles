@@ -125,7 +125,11 @@ if &term =~ "xterm"
 endif
 
 set clipboard+=unnamed,autoselect
+
 syntax on
+set synmaxcol = 100
+autocmd BufRead,BufNewFile *.launch setfiletype xml
+
 nnoremap == gg=G''
 
 " カラースキームの設定
@@ -197,4 +201,3 @@ function! LightlineMode()
   return winwidth(0) > 60 ? lightline#mode() : ''
 endfunction
 
-autocmd BufRead,BufNewFile *.launch setfiletype xml
