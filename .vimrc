@@ -127,7 +127,7 @@ endif
 set clipboard+=unnamed,autoselect
 
 syntax on
-set synmaxcol=100
+set synmaxcol=200
 autocmd BufRead,BufNewFile *.launch setfiletype xml
 
 nnoremap == gg=G''
