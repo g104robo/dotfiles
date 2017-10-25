@@ -37,6 +37,7 @@ packagelist=(
 
 #other
     "redshift"
+    "redshift-gtk"
     "vlc"
     "kazam"
     "gimp"
