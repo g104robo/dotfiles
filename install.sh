@@ -48,8 +48,8 @@ for list in ${packagelist[@]}; do
     sudo apt install -y ${list}
 done
 
-sudo apt update
-sudo apt upgrade
+sudo apt update -y
+sudo apt upgrade -y
 
 #入力メソッドをfcitxに切り替える
 im-config -n fcitx
