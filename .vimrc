@@ -124,7 +124,7 @@ if &term =~ "xterm"
     inoremap <special> <expr> <Esc>[200~ XTermPasteBegin("")
 endif
 
-set clipboard+=unnamed,autoselect
+set clipboard+=unnamedplus,autoselect
 
 syntax on
 set synmaxcol=200
