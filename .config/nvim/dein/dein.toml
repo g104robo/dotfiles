@@ -87,6 +87,8 @@ hook_add = '''
       " # 1分間に1回自動保存
       let g:session_autosave_periodic = 1
     else
+      " # デフォルトの保存ディレクトリを変更する(NeoVimの場合)
+      let g:session_directory = '~/.config/nvim/sessions'
       let g:session_autosave = 'no'
       let g:session_autoload = 'no'
     endif
