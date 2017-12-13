@@ -99,16 +99,16 @@ source $VIMRUNTIME/macros/matchit.vim " Vimの「%」を拡張する
 set wildmenu " コマンドモードの補完
 set history=5000 " 保存するコマンド履歴の数
 
-if has('mouse')
-    set mouse=a
-    if has('mouse_sgr')
-        set ttymouse=sgr
-    elseif v:version > 703 || v:version is 703 && has('patch632')
-        set ttymouse=sgr
-    else
-        set ttymouse=xterm2
-    endif
-endif
+" if has('mouse')
+"     set mouse=a
+"     if has('mouse_sgr')
+"         set ttymouse=sgr
+"     elseif v:version > 703 || v:version is 703 && has('patch632')
+"         set ttymouse=sgr
+"     else
+"         set ttymouse=xterm2
+"     endif
+" endif
 
 " ペースト設定
 if &term =~ "xterm"
@@ -124,7 +124,8 @@ if &term =~ "xterm"
     inoremap <special> <expr> <Esc>[200~ XTermPasteBegin("")
 endif
 
-set clipboard+=unnamedplus,autoselect
+"set clipboard+=unnamedplus,autoselect
+set clipboard+=unnamedplus
 
 syntax on
 set synmaxcol=200
