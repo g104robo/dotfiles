@@ -17,3 +17,4 @@ ypspurやSSM関連のライブラリをインストールする
 due
     install.sh
         apt (install pkg) 
+ros_kinetic_shの書き直し
