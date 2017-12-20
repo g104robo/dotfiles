@@ -37,12 +37,16 @@ hook_add = '''
     " #leg g:ctrlp_dotfiles = 1
 	'''
 
-# # tree file explorer
-# [[plugins]]
-# repo = 'scrooloose/nerdtree'
-# hook_add = '''
-# 	nnoremap <Space>N :NERDTree<CR>
-# 	'''
+# tree file explorer
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+hook_add = '''
+    " # 隠しファイルを表示する
+    let g:NERDTreeShowHidden = 1
+
+	" #nnoremap <Space>N :NERDTreeToggle<CR>
+    nnoremap <silent><C-e> :NERDTreeToggle<CR>
+    	'''
 
 # cool statusline
 [[plugins]]
