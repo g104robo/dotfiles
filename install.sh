@@ -30,6 +30,7 @@ packagelist=(
      "libboost-all-dev"
      "vim"
      "silversearcher-ag"
+     "python-pip"
 
 #グラフ描画
     "gnuplot"
@@ -41,6 +42,7 @@ packagelist=(
     "vlc"
     "kazam"
     "gimp"
+    "cups-pdf"
 )
 
 echo "start apt install apps..."
