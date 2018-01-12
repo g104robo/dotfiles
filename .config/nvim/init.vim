@@ -41,6 +41,12 @@ if dein#check_install()
   call dein#install()
 endif
 
+" edit&source init.vim
+map <Space>invim :tabe ~/.config/nvim/init.vim<cr>
+augroup reload_vimrc " {
+    autocmd!
+    autocmd BufWritePost *.vim nested source $MYVIMRC
+augroup END " }
 
 " 文字コードの設定
 set encoding=utf-8
@@ -49,7 +55,7 @@ set fileencoding=utf-8 " 保存時の文字コード
 set fileencodings=ucs-boms,utf-8,euc-jp,cp932 " 読み込み時の文字コードの自動判別. 左側が優先される
 set fileformats=unix,dos,mac " 改行コードの自動判別. 左側が優先される
 set ambiwidth=double " □や○文字が崩れる問題を解決
- 
+
 " タブ・インデント
 set expandtab " タブ入力を複数の空白入力に置き換える
 set tabstop=4 " 画面上でタブ文字が占める幅
@@ -74,8 +80,7 @@ set relativenumber
 set cursorline
 nnoremap j gj
 nnoremap k gk
-nnoremap <down> gj
-nnoremap <up> gk
+
 " バックスペースキーの有効化
 set backspace=indent,eol,start
 
@@ -89,6 +94,11 @@ noremap <C-h> gT
 
 "change normal
 inoremap jj <ESC>
+
+"unbind key
+nnoremap ZZ <Nop>
+nnoremap ZQ <Nop>
+nnoremap Q <Nop>
 
 " カッコ・タグジャンプ
 set showmatch
@@ -124,10 +134,14 @@ if &term =~ "xterm"
     inoremap <special> <expr> <Esc>[200~ XTermPasteBegin("")
 endif
 
+" Turn off paste mode when leaving insert
+autocmd InsertLeave * set nopaste
+
 "set clipboard+=unnamedplus,autoselect
 set clipboard+=unnamedplus
 
-syntax on
+"syntax on
+syntax enable
 set synmaxcol=200
 autocmd BufRead,BufNewFile *.launch setfiletype xml
 
