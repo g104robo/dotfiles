@@ -3,9 +3,10 @@
 packagelist=(
 #terminal
      "gnome-terminal" 
-     "terminator" 
+     "tmux"
+     #"terminator" 
      "mlterm"
-     "byobu"
+     #"byobu"
 
 #日本語化パッケージ
      "ubuntu-defaults-ja"
