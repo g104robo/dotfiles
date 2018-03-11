@@ -56,3 +56,6 @@ sudo apt upgrade -y
 
 #入力メソッドをfcitxに切り替える
 im-config -n fcitx
+
+#install tmux tpm
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
