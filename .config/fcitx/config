@@ -27,7 +27,7 @@ TriggerKey=CTRL_SPACE ZENKAKUHANKAKU
 # Super+Right Ctrl
 # Disabled
 # Custom
-#SwitchKey=L_SHIFT
+SwitchKey=Disabled
 # カスタム切り替えキー
 #CustomSwitchKey=
 # 入力メソッドをオンに
@@ -48,7 +48,7 @@ InactivateKey=MUHENKAN
 # ALT_SHIFT
 # CTRL_SUPER
 # ALT_SUPER
-#IMSwitchHotkey=CTRL_SHIFT
+IMSwitchHotkey=ALT_SUPER
 # 設定の再読み込み
 #ReloadConfig=CTRL_5
 # 2つのキー入力の間隔
