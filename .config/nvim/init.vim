@@ -42,11 +42,18 @@ if dein#check_install()
 endif
 
 " edit&source init.vim
-map <Space>invim :tabe ~/.config/nvim/init.vim<cr>
+map <Space>initvim :tabe ~/.config/nvim/init.vim<cr>
 augroup reload_vimrc " {
     autocmd!
     autocmd BufWritePost *.vim nested source $MYVIMRC
 augroup END " }
+" edit&source init.vim
+map <Space>deinvim :tabe ~/.config/nvim/dein/dein.toml<cr>
+" augroup reload_vimrc " {
+"     autocmd!
+"     autocmd BufWritePost *.vim nested source $MYVIMRC
+" augroup END " }
+
 
 " 文字コードの設定
 set encoding=utf-8
