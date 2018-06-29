@@ -59,3 +59,8 @@ im-config -n fcitx
 
 #install tmux tpm
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+#install neovim
+sudo apt-add-repository ppa:neovim-ppa/stable
+sudo apt update
+sudo apt install neovim
