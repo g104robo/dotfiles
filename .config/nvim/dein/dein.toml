@@ -100,8 +100,8 @@ repo = 'Yggdroot/indentLine'
 "#     unlet s:local_session_directory
 "# 	'''
 
-[[plugins]]
-repo = 'xolox/vim-misc'
+"# [[plugins]] "# vim-session depends on vim-misc
+"# repo = 'xolox/vim-misc'
 
 [[plugins]] "# create and load vim session for tmux
 repo = 'tpope/vim-obsession'
