@@ -77,3 +77,11 @@ repo = 'Yggdroot/indentLine'
 # create and load vim session for tmux
 [[plugins]]
 repo = 'tpope/vim-obsession'
+
+#[[plugins]]
+#repo = 'altercation/vim-colors-solarized'
+
+[[plugins]]
+repo = 'tomasr/molokai'
+
+
