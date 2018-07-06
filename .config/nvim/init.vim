@@ -53,6 +53,8 @@ map <Space>deinvim :tabe ~/.config/nvim/dein/dein.toml<cr>
 "     autocmd BufWritePost *.vim nested source $MYVIMRC
 " augroup END " }
 
+"swpファイルを作成しない
+set noswapfile
 
 " 文字コードの設定
 set encoding=utf-8
