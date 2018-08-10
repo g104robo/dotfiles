@@ -31,6 +31,7 @@ packagelist=(
      "libboost-all-dev"
      "vim"
      "silversearcher-ag"
+     "python3-pip"
      "python-pip"
 
 #グラフ描画
@@ -64,3 +65,6 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 sudo apt-add-repository ppa:neovim-ppa/stable
 sudo apt update
 sudo apt install neovim
+
+#install xkeysnail
+sudo pip3 install xkeysnail

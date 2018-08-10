@@ -114,8 +114,8 @@ repo = 'xolox/vim-misc'
 
 #syntax plugins
 [[plugins]]
+repo = 'vim-syntastic/syntastic'
 hook_add = '''
-    repo = 'vim-syntastic/syntastic'
     set statusline+=%#warningmsg#
     set statusline+=%{SyntasticStatuslineFlag()}
     set statusline+=%*

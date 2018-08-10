@@ -27,4 +27,9 @@ for file in `\find . -maxdepth 8 -type f`; do
     #echo "dist dir ${HOME}/${DOT_CONFIG_DIRECTORY}/${file:2}"
 done
 
+#xkeysnail link
+sudo mkdir -p /etc/opt/xkeysnail/
+sudo ln -snfv ${DOT_DIRECTORY}/start_xkeysnail.sh /etc/opt/xkeysnail/start_xkeysnail.sh
+sudo ln -snfv ${DOT_DIRECTORY}/xkeysnail_config.py /etc/opt/xkeysnail/xkeysnail_config.py
+
 echo "linked dotfiles complete!"
