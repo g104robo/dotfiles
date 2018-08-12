@@ -119,9 +119,22 @@ hook_add = '''
     set statusline+=%#warningmsg#
     set statusline+=%{SyntasticStatuslineFlag()}
     set statusline+=%*
-    
     let g:syntastic_always_populate_loc_list = 1
     let g:syntastic_auto_loc_list = 1
     let g:syntastic_check_on_open = 1
     let g:syntastic_check_on_wq = 0
 	'''
+
+# markdown settings
+# [[plugins]]
+# repo = 'plasticboy/vim-markdown'
+# [[plugins]]
+# repo = 'previm/previm'
+# rev = '46-support-latest-open-browser'
+# [[plugins]]
+# repo = 'tyru/open-browser.vim'
+# hook_add = '''
+#     au BufRead,BufNewFile *.md set filetype=markdown
+#     let g:previm_open_cmd = 'open -a Firefox'
+#     '''
+

@@ -115,7 +115,7 @@ source $VIMRUNTIME/macros/matchit.vim " Vimの「%」を拡張する
 
 " コマンド補完
 set wildmenu " コマンドモードの補完
-set history=5000 " 保存するコマンド履歴の数
+set history=1000 " 保存するコマンド履歴の数
 
 " if has('mouse')
 "     set mouse=a
@@ -225,4 +225,8 @@ endfunction
 function! LightlineMode()
   return winwidth(0) > 60 ? lightline#mode() : ''
 endfunction
+
+"setup for previm
+" au BufRead,BufNewFile *.md set filetype=markdown
+" let g:previm_open_cmd = 'open -a Firefox'
 
